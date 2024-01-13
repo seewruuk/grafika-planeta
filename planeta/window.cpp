@@ -111,7 +111,7 @@ void Window::InitGlewOrDie(){
 }
 
 void Window::InitTextures(){
-    color_texture_.Initialize(kColorTexureFile);
+    color_texture_.Initialize(kColorTexureFile2);
     color_texture_2_.Initialize(kColorTexureFile2);
     ice_texture_.Initialize(kIceTexureFile);
 }

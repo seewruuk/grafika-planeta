@@ -113,7 +113,7 @@ void Torus::Draw(const TextureCameraProgram &program) const{
 
     glActiveTexture(texture_unit_);
 
-    glBindTexture(GL_TEXTURE_2D, texture_);
+    glBindTexture(GL_TEXTURE_2D, texture_2_);
     program.SetModelMatrix(model_matrix_);
     for (int i=0;i<n_;i++){
       glDrawElements(GL_TRIANGLE_STRIP,
