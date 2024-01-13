@@ -1,0 +1,130 @@
+# depslib dependency file v1.0
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\baseprogram.cpp
+	"baseprogram.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<iostream>
+	<fstream>
+	<cstring>
+	<cstdlib>
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\baseprogram.h
+	<GL/glew.h>
+	"matma.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\matma.h
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\cameraprogram.cpp
+	<iostream>
+	"cameraprogram.h"
+	<GLFW/glfw3.h>
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\cameraprogram.h
+	<GL/glew.h>
+	"baseprogram.h"
+	"matma.h"
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\glerror.cpp
+	"glerror.h"
+	<iostream>
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\glerror.h
+	<GL/glew.h>
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\indexmodel.cpp
+	"indexmodel.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\indexmodel.h
+	<GL/glew.h>
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\main.cpp
+	"window.h"
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+
+1705150398 c:\msys64\home\s23466\planeta\planeta\window.h
+	<cstring>
+	<ctime>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	"torus.h"
+	"plane.h"
+	"texturecameraprogram.h"
+	"matma.h"
+	"texture.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\torus.h
+	"indexmodel.h"
+	"movablemodel.h"
+	"texturemodel.h"
+	"matma.h"
+	"texturecameraprogram.h"
+
+1705148997 c:\msys64\home\s23466\planeta\planeta\movablemodel.h
+	"matma.h"
+
+1705150264 c:\msys64\home\s23466\planeta\planeta\texturemodel.h
+	<GL/glew.h>
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\texturecameraprogram.h
+	<GL/glew.h>
+	"matma.h"
+	"modelprogram.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\modelprogram.h
+	"cameraprogram.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\plane.h
+	"indexmodel.h"
+	"movablemodel.h"
+	"texturemodel.h"
+	"matma.h"
+	"texturecameraprogram.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\texture.h
+	<GL/glew.h>
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\matma.cpp
+	"matma.h"
+	<cmath>
+	<iostream>
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\modelprogram.cpp
+	"modelprogram.h"
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\plane.cpp
+	"plane.h"
+	"vertices.h"
+
+1705148436 c:\msys64\home\s23466\planeta\planeta\vertices.h
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\texture.cpp
+	"texture.h"
+	<fstream>
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<stdint.h>
+
+1705148436 source:c:\msys64\home\s23466\planeta\planeta\texturecameraprogram.cpp
+	"texturecameraprogram.h"
+	<GL/glew.h>
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1705150683 source:c:\msys64\home\s23466\planeta\planeta\window.cpp
+	"window.h"
+	<iostream>
+	<cstdlib>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	"glerror.h"
+
+1705149878 source:c:\msys64\home\s23466\planeta\planeta\torus.cpp
+	"torus.h"
+	"vertices.h"
+	<iostream>
+	<cmath>
+
