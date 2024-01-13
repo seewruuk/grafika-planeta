@@ -11,8 +11,8 @@
 const char* kVertexShader="TextureShader.vertex.glsl";
 const char* kFragmentShader="TextureShader.fragment.glsl";
 
-const char* kIceTexureFile="ice.tga";
-const char* kColorTexureFile="texture.tga";
+const char* kIceTexureFile="cosmos.tga";
+const char* kColorTexureFile="moon.tga";
 
 const char* kColorTexureFile2="jupitermap2.tga";
 
@@ -111,7 +111,7 @@ void Window::InitGlewOrDie(){
 }
 
 void Window::InitTextures(){
-    color_texture_.Initialize(kColorTexureFile2);
+    color_texture_.Initialize(kColorTexureFile);
     color_texture_2_.Initialize(kColorTexureFile2);
     ice_texture_.Initialize(kIceTexureFile);
 }
@@ -120,13 +120,12 @@ void Window::InitModels(){
     plane_.Initialize(kPlaneM, kPlaneN);
     plane_.SetTexture(ice_texture_);
     plane_.SetTextureUnit(GL_TEXTURE0);
-        plane_.SetTexture2(color_texture_2_);
-    plane_.SetTexture2(color_texture_2_);
+     plane_.SetTexture2(color_texture_2_);
 
 
     torus_.Initialize(kTorusM, kTorusN, kTorusR, kTorus_r);
     torus_.SetTexture(color_texture_);
-    torus_.SetTexture2(color_texture_);
+    torus_.SetTexture2(color_texture_2_);
     torus_.SetTextureUnit(GL_TEXTURE0);
 }
 

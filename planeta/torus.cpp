@@ -23,7 +23,7 @@ void Torus::Move(float delta_t){
     model_matrix_prim_.SetUnitMatrix();
     model_matrix_prim_.Scale(0.25, 0.26, 0.25);
     model_matrix_prim_.RotateAboutY(3*angle_);
-    model_matrix_prim_.Translate(6, 0, 0);
+    model_matrix_prim_.Translate(4, 0, 0);
     model_matrix_prim_.RotateAboutY(2*angle_);
 }
 
@@ -48,12 +48,14 @@ void Torus::Initialize(int n, int m, float R, float r){
     TextureVertex * vertices=new TextureVertex[(m_ + 1)*(n_ + 1)];
     int i,j;
     for (i=0;i<=n_;i++) {
-      float phi=2*M_PI/(float)n_*i;
+      float phi=M_PI*(((float)i/n_) - 0.5);
       for (j=0;j<=m_;j++){
         float theta=2*M_PI/(float)m_*j;
-        vertices[i*(m_ + 1)+j].position[0]=(R + r*cos(phi))*sin(theta);
-        vertices[i*(m_ + 1)+j].position[1]=r*sin(phi);
-        vertices[i*(m_ + 1)+j].position[2]=(R + r*cos(phi))*cos(theta);
+
+        vertices[i*(m_ + 1)+j].position[0]= R*sin(theta)*cos(phi);
+        vertices[i*(m_ + 1)+j].position[1]=R*sin(phi);
+        vertices[i*(m_ + 1)+j].position[2]=R*cos(phi)*cos(theta);
+
         vertices[i*(m_ + 1)+j].position[3]=1.0f;
         vertices[i*(m_ + 1)+j].texture[0]=(float)j/(float)m_;
         vertices[i*(m_ + 1)+j].texture[1]=(float)i/(float)n_;

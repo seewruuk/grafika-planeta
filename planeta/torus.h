@@ -9,7 +9,7 @@
 
 class Torus: public IndexModel, public MovableModel, public TextureModel{
  public:
-    Torus(float init_velocity=40, float init_angle=0);
+    Torus(float init_velocity=10, float init_angle=0);
     void SetInitAngle(float angle){angle_= angle;}
     void SetVelocity(float velocity){velocity_= velocity;}
     void Initialize(int n, int m, float R, float r);
